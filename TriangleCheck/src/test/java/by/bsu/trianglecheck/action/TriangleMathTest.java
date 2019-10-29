@@ -1,99 +1,95 @@
 package by.bsu.trianglecheck.action;
 
+import by.bsu.trianglecheck.exception.TriangleMathException;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
 
 public class TriangleMathTest {
-    private final TriangleMath triangleMath = new TriangleMath();
+    private TriangleMath triangleMath;
+
+    @BeforeMethod
+    public void init() {
+        triangleMath = new TriangleMath();
+    }
+
+    @DataProvider
+    Object[][] sidesAreZero() {
+        return new Object[][] { { 0.0, 0.0, 0.0 },
+                { 1.0, 0.0, 0.0 }, { 0.0, 1.0, 0.0 }, { 0.0, 0.0, 1.0 },
+                { 1.0, 1.0, 0.0 }, { 1.0, 0.0, 1.0 }, { 0.0, 1.0, 1.0 } };
+    }
+
+    @DataProvider
+    Object[][] sidesAreNegative() {
+        return new Object[][] { {-9.0, -9.0, -9.0},
+            {-9.0, 9.0, 9.0}, {9.0, -9.0, 9.0}, {9.0, 9.0, -9.0},
+            {-9.0, -9.0, 9.0}, {-9.0, 9.0, -9.0}, {9.0, -9.0, -9.0} };
+    }
+
+    @DataProvider
+    Object[][] sideEqualToSumOfOtherTwo() {
+        return new Object[][] {
+                {8.0, 3.0, 5.0}, {3.0, 8.0, 5.0}, {3.0, 5.0, 8.0} };
+    }
+
+    @DataProvider
+    Object[][] notANumberSides() {
+        return new Object[][] {
+                {Double.NaN, Double.NaN, Double.NaN},
+                {Double.NaN, 8.0, 8.0}, {8.0, Double.NaN, 8.0}, {8.0, 8.0, Double.NaN},
+                {Double.NaN, Double.NaN, 8.0}, {Double.NaN, 8.0, Double.NaN}, {8.0, Double.NaN, Double.NaN} };
+    }
+
+    @Test(dataProvider = "sidesAreZero", expectedExceptions = { TriangleMathException.class })
+    public void isLengthSidesZero(Double a, Double b, Double c) {
+        triangleMath.isTriangle(a, b, c);
+    }
+
+    @Test(dataProvider = "sidesAreNegative", expectedExceptions = { TriangleMathException.class })
+    public void isLengthSidesNegative(Double a, Double b, Double c) {
+        triangleMath.isTriangle(a, b, c);
+    }
+
+    @Test(dataProvider = "sideEqualToSumOfOtherTwo")
+    public void isSideSumOfOtherTwo(Double a, Double b, Double c) {
+        assertFalse(triangleMath.isTriangle(a, b, c));
+    }
+
+    @Test(dataProvider = "notANumberSides", expectedExceptions = { TriangleMathException.class })
+    public void isSideNAN(Double a, Double b, Double c) {
+        triangleMath.isTriangle(a, b, c);
+    }
 
     @Test
     public void sideShorterThanSumOfOtherTwo() {
-        double a = 15.0;
-        double b = 14.0;
-        double c = 11.0;
-        boolean actual = triangleMath.isTriangle(a, b, c);
-        assertTrue(actual);
-    }
-
-    @Test(groups = { "sideEqualToSumOfOtherTwo" })
-    public void firstSideEqualToSumOfOtherTwo() {
-        double a = 8.0;
-        double b = 3.0;
-        double c = 5.0;
-        boolean actual = triangleMath.isTriangle(a, b, c);
-        assertEquals(false, actual);
-    }
-
-    @Test(groups = { "sideEqualToSumOfOtherTwo" })
-    public void secondSideEqualToSumOfOtherTwo() {
-        double a = 3.0;
-        double b = 8.0;
-        double c = 5.0;
-        boolean actual = triangleMath.isTriangle(a, b, c);
-        assertEquals(false, actual);
-    }
-
-    @Test(groups = { "sideEqualToSumOfOtherTwo" })
-    public void thirdSideEqualToSumOfOtherTwo() {
-        double a = 3.0;
-        double b = 5.0;
-        double c = 8.0;
-        boolean actual = triangleMath.isTriangle(a, b, c);
-        assertEquals(false, actual);
+        assertTrue(triangleMath.isTriangle(15.0, 14.0, 11.0));
     }
 
     @Test
-    public void oneZeroSide() {
-        double a = 0.0;
-        double b = 1.3;
-        double c = 9.8;
-        boolean actual = !triangleMath.isTriangle(a, b, c);
-        assertTrue(actual);
-    }
-
-    @Test
-    public void allSidesAreZero() {
-        double a = 0.0;
-        double b = 0.0;
-        double c = 0.0;
-        boolean actual = triangleMath.isTriangle(a, b, c);
-        assertEquals(false, actual);
-    }
-
-    @Test
-    public void negativeSide() {
-        double a = -90.4;
-        double b = 13.7;
-        double c = 6.8;
-        boolean actual = triangleMath.isTriangle(a, b, c);
-        assertEquals(false, actual);
+    public void sideGreaterThanSumOfOtherTwo() {
+        assertFalse(triangleMath.isTriangle(10.0, 2.0, 3.0));
     }
 
     @Test
     public void triangleEquilateral() {
-        double a = 9.9;
-        double b = 9.9;
-        double c = 9.9;
-        boolean actual = triangleMath.isTriangle(a, b, c);
-        assertTrue(actual);
-    }
-
-    @Test
-    public void triangleScalene() {
-        double a = 7.0;
-        double b = 10.0;
-        double c = 5.0;
-        boolean actual = triangleMath.isTriangle(a, b, c);
-        assertTrue(actual);
+        assertTrue(triangleMath.isTriangle(9.9, 9.9, 9.9));
     }
 
     @Test
     public void triangleIsoceles() {
-        double a = 5.7;
-        double b = 5.7;
-        double c = 4.1;
-        boolean actual = triangleMath.isTriangle(a, b, c);
-        assertTrue(actual);
+        assertTrue(triangleMath.isTriangle(5.7, 5.7, 4.1));
+    }
+
+    @Test
+    public void triangleRight() {
+        assertTrue(triangleMath.isTriangle(12, 9, 15));
+    }
+
+    @Test
+    public void sidesAreMinDouble() {
+        assertTrue(triangleMath.isTriangle(Double.MAX_VALUE, Double.MAX_VALUE, Double.MAX_VALUE));
     }
 }

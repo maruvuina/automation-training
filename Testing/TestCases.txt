@@ -1,69 +1,69 @@
-https://www.budget.com
+п»їhttps://www.budget.com
 
-№1
+в„–1
 Test case description:
-Проверить, что невозможно арендовать автомобиль, если место бронирования и возврата находятся очень далеко
-и время аренды и время возврата имеют малый промежуток.
+РџСЂРѕРІРµСЂРёС‚СЊ, С‡С‚Рѕ РЅРµРІРѕР·РјРѕР¶РЅРѕ Р°СЂРµРЅРґРѕРІР°С‚СЊ Р°РІС‚РѕРјРѕР±РёР»СЊ, РµСЃР»Рё РјРµСЃС‚Рѕ Р±СЂРѕРЅРёСЂРѕРІР°РЅРёСЏ Рё РІРѕР·РІСЂР°С‚Р° РЅР°С…РѕРґСЏС‚СЃСЏ РѕС‡РµРЅСЊ РґР°Р»РµРєРѕ
+Рё РІСЂРµРјСЏ Р°СЂРµРЅРґС‹ Рё РІСЂРµРјСЏ РІРѕР·РІСЂР°С‚Р° РёРјРµСЋС‚ РјР°Р»С‹Р№ РїСЂРѕРјРµР¶СѓС‚РѕРє.
 Steps:
-1). Зайти на сайт budget.com
-2). В поле pick-up location вводим: 
+1). Р—Р°Р№С‚Рё РЅР° СЃР°Р№С‚ budget.com
+2). Р’ РїРѕР»Рµ pick-up location РІРІРѕРґРёРј: 
 	"Minsk National Airport, Minsk, BA-(MSQ)",
 	time: "11:30 PM"
-    В поле return location вводим: 
+    Р’ РїРѕР»Рµ return location РІРІРѕРґРёРј: 
 	"Moscow, Sheremetjevo Apo, Moscow, Russia-(SVO)".
 	time: "midnight"
-3). В поле дата pick-up location выбрать сегодняшний день, в return location - завтрашний день.
-4). Нажать "Select My Car"
+3). Р’ РїРѕР»Рµ РґР°С‚Р° pick-up location РІС‹Р±СЂР°С‚СЊ СЃРµРіРѕРґРЅСЏС€РЅРёР№ РґРµРЅСЊ, РІ return location - Р·Р°РІС‚СЂР°С€РЅРёР№ РґРµРЅСЊ.
+4). РќР°Р¶Р°С‚СЊ "Select My Car"
 Expected result:
 We are unable to process your request at this time. 
 Please return to the Homepage and start your process again 
 or use the Worldwide Phone Number List to find your Budget Customer Service telephone number.
 
-№2
+в„–2
 Test case description:
-Проверить, что нельзя арендовать автомобиль более чем на 31 день.
+РџСЂРѕРІРµСЂРёС‚СЊ, С‡С‚Рѕ РЅРµР»СЊР·СЏ Р°СЂРµРЅРґРѕРІР°С‚СЊ Р°РІС‚РѕРјРѕР±РёР»СЊ Р±РѕР»РµРµ С‡РµРј РЅР° 31 РґРµРЅСЊ.
 Steps:
-1). Зайти на сайт budget.com
-2). В полях дата, время аренды и возврата вводим промежуток больше одного месяца.
-3). Нажать "Select My Car"
+1). Р—Р°Р№С‚Рё РЅР° СЃР°Р№С‚ budget.com
+2). Р’ РїРѕР»СЏС… РґР°С‚Р°, РІСЂРµРјСЏ Р°СЂРµРЅРґС‹ Рё РІРѕР·РІСЂР°С‚Р° РІРІРѕРґРёРј РїСЂРѕРјРµР¶СѓС‚РѕРє Р±РѕР»СЊС€Рµ РѕРґРЅРѕРіРѕ РјРµСЃСЏС†Р°.
+3). РќР°Р¶Р°С‚СЊ "Select My Car"
 Expected result:
 Sorry, rentals of 31 days or more aren't available to be booked online. 
 Please contact us to book this rental.
 
-№3
+в„–3
 Test case description:
-Проверить, что невозможно арендовать и возвратить автомобиль, 
-если место аренды и возврата далеки друг от друга.
+РџСЂРѕРІРµСЂРёС‚СЊ, С‡С‚Рѕ РЅРµРІРѕР·РјРѕР¶РЅРѕ Р°СЂРµРЅРґРѕРІР°С‚СЊ Рё РІРѕР·РІСЂР°С‚РёС‚СЊ Р°РІС‚РѕРјРѕР±РёР»СЊ, 
+РµСЃР»Рё РјРµСЃС‚Рѕ Р°СЂРµРЅРґС‹ Рё РІРѕР·РІСЂР°С‚Р° РґР°Р»РµРєРё РґСЂСѓРі РѕС‚ РґСЂСѓРіР°.
 Steps:
-1). Зайти на сайт budget.com
-2). В поле pick-up location вводим: "Minsk National Airport, Minsk, BA-(MSQ)"
-    В поле return location вводим: "Concord Regional Airport, Concord, North Carolina, United States-(USA)"
-3). Нажать "Select My Car"
+1). Р—Р°Р№С‚Рё РЅР° СЃР°Р№С‚ budget.com
+2). Р’ РїРѕР»Рµ pick-up location РІРІРѕРґРёРј: "Minsk National Airport, Minsk, BA-(MSQ)"
+    Р’ РїРѕР»Рµ return location РІРІРѕРґРёРј: "Concord Regional Airport, Concord, North Carolina, United States-(USA)"
+3). РќР°Р¶Р°С‚СЊ "Select My Car"
 Expected result:
 Unfortunately, we don't offer one-way rentals between these two locations/regions. 
 If you wish, please try other pick-up and return combinations. 
 Thank you for considering Budget for your travel plans.
 
-№4
+в„–4
 Test case description:
-Проверить, что нельзя арендовать автомобиль, когда время возврата раньше времени аренды.
+РџСЂРѕРІРµСЂРёС‚СЊ, С‡С‚Рѕ РЅРµР»СЊР·СЏ Р°СЂРµРЅРґРѕРІР°С‚СЊ Р°РІС‚РѕРјРѕР±РёР»СЊ, РєРѕРіРґР° РІСЂРµРјСЏ РІРѕР·РІСЂР°С‚Р° СЂР°РЅСЊС€Рµ РІСЂРµРјРµРЅРё Р°СЂРµРЅРґС‹.
 Steps:
-1). Зайти на сайт budget.com
-2). В поле дата для pick-up location и return location ставим один и тоже день.
-3). В поле время return location ставим время, которое раньше времени аренды.
-4). Нажать "Select My Car"
+1). Р—Р°Р№С‚Рё РЅР° СЃР°Р№С‚ budget.com
+2). Р’ РїРѕР»Рµ РґР°С‚Р° РґР»СЏ pick-up location Рё return location СЃС‚Р°РІРёРј РѕРґРёРЅ Рё С‚РѕР¶Рµ РґРµРЅСЊ.
+3). Р’ РїРѕР»Рµ РІСЂРµРјСЏ return location СЃС‚Р°РІРёРј РІСЂРµРјСЏ, РєРѕС‚РѕСЂРѕРµ СЂР°РЅСЊС€Рµ РІСЂРµРјРµРЅРё Р°СЂРµРЅРґС‹.
+4). РќР°Р¶Р°С‚СЊ "Select My Car"
 Expected result:
 Whoops! Your return time has already passed. Please select a new time.
 
-№5
+в„–5
 Test case description:
-Проверить, что нельзя арендовать автомобиль, если мето аренды в запрошенные часы закрыто.
+РџСЂРѕРІРµСЂРёС‚СЊ, С‡С‚Рѕ РЅРµР»СЊР·СЏ Р°СЂРµРЅРґРѕРІР°С‚СЊ Р°РІС‚РѕРјРѕР±РёР»СЊ, РµСЃР»Рё РјРµС‚Рѕ Р°СЂРµРЅРґС‹ РІ Р·Р°РїСЂРѕС€РµРЅРЅС‹Рµ С‡Р°СЃС‹ Р·Р°РєСЂС‹С‚Рѕ.
 Steps:
-1). Зайти на сайт budget.com
-2). В поле pick-up location вводим: "Minsk National Airport, Minsk, BA-(MSQ)"
-3). В поле time pick-up и/или return location ввести время до открытия 
-и/или время после закрытия места аренды.
-4). Нажать "Select My Car"
+1). Р—Р°Р№С‚Рё РЅР° СЃР°Р№С‚ budget.com
+2). Р’ РїРѕР»Рµ pick-up location РІРІРѕРґРёРј: "Minsk National Airport, Minsk, BA-(MSQ)"
+3). Р’ РїРѕР»Рµ time pick-up Рё/РёР»Рё return location РІРІРµСЃС‚Рё РІСЂРµРјСЏ РґРѕ РѕС‚РєСЂС‹С‚РёСЏ 
+Рё/РёР»Рё РІСЂРµРјСЏ РїРѕСЃР»Рµ Р·Р°РєСЂС‹С‚РёСЏ РјРµСЃС‚Р° Р°СЂРµРЅРґС‹.
+4). РќР°Р¶Р°С‚СЊ "Select My Car"
 Expected result:
 The Rental Location you have selected is closed during the hours requested.
 Hours of Operation for this location are:
@@ -71,57 +71,57 @@ Sun - Sat 10:00 AM - 7:00 PM Rental service may be available after hours.
 Call: +375447122445 for further details.
 Please try another Budget location for renting.
 
-№6
+в„–6
 Test case description:
-Проверить, что нельзя арендовать и/или возвратить автомобиль,
-если место аренды и/или возврата не доступно по этому адресу.
+РџСЂРѕРІРµСЂРёС‚СЊ, С‡С‚Рѕ РЅРµР»СЊР·СЏ Р°СЂРµРЅРґРѕРІР°С‚СЊ Рё/РёР»Рё РІРѕР·РІСЂР°С‚РёС‚СЊ Р°РІС‚РѕРјРѕР±РёР»СЊ,
+РµСЃР»Рё РјРµСЃС‚Рѕ Р°СЂРµРЅРґС‹ Рё/РёР»Рё РІРѕР·РІСЂР°С‚Р° РЅРµ РґРѕСЃС‚СѓРїРЅРѕ РїРѕ СЌС‚РѕРјСѓ Р°РґСЂРµСЃСѓ.
 Steps:
-1). Зайти на сайт budget.com
-2). В поле pick-up location вводим: "Minsk National Airport, Minsk, BA-(MSQ)"
-    В поле return location вводим: "Pinsk, Belarus"	
-3). Нажать "Select My Car"
+1). Р—Р°Р№С‚Рё РЅР° СЃР°Р№С‚ budget.com
+2). Р’ РїРѕР»Рµ pick-up location РІРІРѕРґРёРј: "Minsk National Airport, Minsk, BA-(MSQ)"
+    Р’ РїРѕР»Рµ return location РІРІРѕРґРёРј: "Pinsk, Belarus"	
+3). РќР°Р¶Р°С‚СЊ "Select My Car"
 Expected result:
 Sorry! No Budget locations are available in address provided.!
 
-№7
+в„–7
 Test case description:
-Арендовать автомобиль в "Minsk National Airport, Minsk, BA-(MSQ)" и вернуть в "Hotel Minsk, Minsk, BA-(M14)"
+РђСЂРµРЅРґРѕРІР°С‚СЊ Р°РІС‚РѕРјРѕР±РёР»СЊ РІ "Minsk National Airport, Minsk, BA-(MSQ)" Рё РІРµСЂРЅСѓС‚СЊ РІ "Hotel Minsk, Minsk, BA-(M14)"
 Steps:
-1). Зайти на сайт budget.com
-2). В поле pick-up location вводим: "Minsk National Airport, Minsk, BA-(MSQ)"
-    В поле return location вводим: "Hotel Minsk, Minsk, BA-(M14)"
-    Выбираем дату, время аренды/возврата.
-3). Нажать "Select My Car"
+1). Р—Р°Р№С‚Рё РЅР° СЃР°Р№С‚ budget.com
+2). Р’ РїРѕР»Рµ pick-up location РІРІРѕРґРёРј: "Minsk National Airport, Minsk, BA-(MSQ)"
+    Р’ РїРѕР»Рµ return location РІРІРѕРґРёРј: "Hotel Minsk, Minsk, BA-(M14)"
+    Р’С‹Р±РёСЂР°РµРј РґР°С‚Сѓ, РІСЂРµРјСЏ Р°СЂРµРЅРґС‹/РІРѕР·РІСЂР°С‚Р°.
+3). РќР°Р¶Р°С‚СЊ "Select My Car"
 Expected result:
-Перенаправление на другую страницу и показ доступных для бронирования автомобилей.
+РџРµСЂРµРЅР°РїСЂР°РІР»РµРЅРёРµ РЅР° РґСЂСѓРіСѓСЋ СЃС‚СЂР°РЅРёС†Сѓ Рё РїРѕРєР°Р· РґРѕСЃС‚СѓРїРЅС‹С… РґР»СЏ Р±СЂРѕРЅРёСЂРѕРІР°РЅРёСЏ Р°РІС‚РѕРјРѕР±РёР»РµР№.
 
-№8
+в„–8
 Test case description:
-Проверить, что можно обновить параметры по выбору автомобиля (изменить выбранный).
+РџСЂРѕРІРµСЂРёС‚СЊ, С‡С‚Рѕ РјРѕР¶РЅРѕ РѕР±РЅРѕРІРёС‚СЊ РїР°СЂР°РјРµС‚СЂС‹ РїРѕ РІС‹Р±РѕСЂСѓ Р°РІС‚РѕРјРѕР±РёР»СЏ (РёР·РјРµРЅРёС‚СЊ РІС‹Р±СЂР°РЅРЅС‹Р№).
 Steps:
-1). Зайти на сайт budget.com
-2). Заполнить поля для бронирования.
-3). Выбрать автомобиль.
-4). Нажать "Modify / View Rental Details". В появившемся окне выбрать другой атомобиль.
+1). Р—Р°Р№С‚Рё РЅР° СЃР°Р№С‚ budget.com
+2). Р—Р°РїРѕР»РЅРёС‚СЊ РїРѕР»СЏ РґР»СЏ Р±СЂРѕРЅРёСЂРѕРІР°РЅРёСЏ.
+3). Р’С‹Р±СЂР°С‚СЊ Р°РІС‚РѕРјРѕР±РёР»СЊ.
+4). РќР°Р¶Р°С‚СЊ "Modify / View Rental Details". Р’ РїРѕСЏРІРёРІС€РµРјСЃСЏ РѕРєРЅРµ РІС‹Р±СЂР°С‚СЊ РґСЂСѓРіРѕР№ Р°С‚РѕРјРѕР±РёР»СЊ.
 Expected result:
-Изображение и характеристики автомобиля изменились.
+РР·РѕР±СЂР°Р¶РµРЅРёРµ Рё С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРєРё Р°РІС‚РѕРјРѕР±РёР»СЏ РёР·РјРµРЅРёР»РёСЃСЊ.
 
-№9
+в„–9
 Test case description:
-Проверить, что при изменении валюты стоимоть аренды поменяется на выбранную.
+РџСЂРѕРІРµСЂРёС‚СЊ, С‡С‚Рѕ РїСЂРё РёР·РјРµРЅРµРЅРёРё РІР°Р»СЋС‚С‹ СЃС‚РѕРёРјРѕС‚СЊ Р°СЂРµРЅРґС‹ РїРѕРјРµРЅСЏРµС‚СЃСЏ РЅР° РІС‹Р±СЂР°РЅРЅСѓСЋ.
 Steps:
-1). Зайти на сайт budget.com
-2). Заполнить поля для бронирования.
-3). В появившемя новом окне выбрать другую доступную валюту, нажав "Currency".
+1). Р—Р°Р№С‚Рё РЅР° СЃР°Р№С‚ budget.com
+2). Р—Р°РїРѕР»РЅРёС‚СЊ РїРѕР»СЏ РґР»СЏ Р±СЂРѕРЅРёСЂРѕРІР°РЅРёСЏ.
+3). Р’ РїРѕСЏРІРёРІС€РµРјСЏ РЅРѕРІРѕРј РѕРєРЅРµ РІС‹Р±СЂР°С‚СЊ РґСЂСѓРіСѓСЋ РґРѕСЃС‚СѓРїРЅСѓСЋ РІР°Р»СЋС‚Сѓ, РЅР°Р¶Р°РІ "Currency".
 Expected result:
-Стоимость аренды, предлагаемых автомобилей, изменилась на выбранную.
+РЎС‚РѕРёРјРѕСЃС‚СЊ Р°СЂРµРЅРґС‹, РїСЂРµРґР»Р°РіР°РµРјС‹С… Р°РІС‚РѕРјРѕР±РёР»РµР№, РёР·РјРµРЅРёР»Р°СЃСЊ РЅР° РІС‹Р±СЂР°РЅРЅСѓСЋ.
 
-№10
+в„–10
 Test case description:
-Проверить, что нельзя арендовать автомобиль, если время начало аренды раньше текущего.
+РџСЂРѕРІРµСЂРёС‚СЊ, С‡С‚Рѕ РЅРµР»СЊР·СЏ Р°СЂРµРЅРґРѕРІР°С‚СЊ Р°РІС‚РѕРјРѕР±РёР»СЊ, РµСЃР»Рё РІСЂРµРјСЏ РЅР°С‡Р°Р»Рѕ Р°СЂРµРЅРґС‹ СЂР°РЅСЊС€Рµ С‚РµРєСѓС‰РµРіРѕ.
 Steps:
-1). Зайти на сайт budget.com
-2). Выбрать место аренды и время, которое уже прошло.
-3). Нажать "Select My Car"
+1). Р—Р°Р№С‚Рё РЅР° СЃР°Р№С‚ budget.com
+2). Р’С‹Р±СЂР°С‚СЊ РјРµСЃС‚Рѕ Р°СЂРµРЅРґС‹ Рё РІСЂРµРјСЏ, РєРѕС‚РѕСЂРѕРµ СѓР¶Рµ РїСЂРѕС€Р»Рѕ.
+3). РќР°Р¶Р°С‚СЊ "Select My Car"
 Expected result:
 Whoops! Your pick-up time has already passed. Please select a new time.

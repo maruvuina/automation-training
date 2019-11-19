@@ -84,12 +84,11 @@ Sorry! No Budget locations are available in address provided.!
 
 №7
 Test case description:
-Арендовать автомобиль в "Minsk National Airport, Minsk, BA-(MSQ)" и вернуть в "Hotel Minsk, Minsk, BA-(M14)"
+Арендовать автомобиль в "Minsk National Airport, Minsk, BA-(MSQ)" и вернуть там же.
 Steps:
 1). Зайти на сайт budget.com
 2). В поле pick-up location вводим: "Minsk National Airport, Minsk, BA-(MSQ)".
-3). В поле return location вводим: "Hotel Minsk, Minsk, BA-(M14)"
-4). Выбираем дату, время аренды/возврата.
+3). Выбираем дату, время аренды/возврата.
 5). Нажать "Select My Car".
 Expected result:
 Перенаправление на другую страницу и показ доступных для бронирования автомобилей.

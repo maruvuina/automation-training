@@ -53,7 +53,7 @@ Steps:
 3). В поле время return location ставим время, которое раньше времени аренды.
 4). Нажать "Select My Car".
 Expected result:
-Whoops! Your return time has already passed. Please select a new time.
+Появление сообщения об ошибке вверху страницы: "Whoops! Your return time has already passed. Please select a new time."
 
 №5
 Test case description:
@@ -80,7 +80,7 @@ Steps:
 3). В поле return location вводим: "Pinsk, Belarus".	
 3). Нажать "Select My Car".
 Expected result:
-Sorry! No Budget locations are available in address provided.!
+Появление сообщения об ошибке вверху страницы: "Sorry! No Budget locations are available in address provided.!"
 
 №7
 Test case description:
@@ -95,24 +95,27 @@ Expected result:
 
 №8
 Test case description:
-Проверить, что можно обновить параметры по выбору автомобиля (изменить выбранный).
+Проверить, что невозможно арендовать автомобиль в один и тот же день и вернуть в 
+одно и тоже время.
 Steps:
 1). Зайти на сайт budget.com
-2). Заполнить поля для бронирования.
-3). Выбрать автомобиль.
-4). Нажать "Modify / View Rental Details". В появившемся окне выбрать другой атомобиль.
+2). В поле pick-up location вводим: "Minsk National Airport, Minsk, BA-(MSQ)"
+3). В поле date pick-up return вводим один и тот же день.
+3). В поле time pick-up и return вводим одно и тоже время.
+4). Нажать "Select My Car".
 Expected result:
-Изображение и характеристики автомобиля изменились.
+Появление сообщения об ошибке вверху страницы: "Pick-up Date cannot be after Return Date."
 
 №9
 Test case description:
-Проверить, что при изменении валюты стоимоть аренды поменяется на выбранную.
+Проверить, что можно изменить место возврата автомобиля.
 Steps:
 1). Зайти на сайт budget.com
 2). Заполнить поля для бронирования.
-3). В появившемя новом окне выбрать другую доступную валюту, нажав "Currency".
+3). На новой странице нажать "Modify Rental Details".
+4). В появившемя новом окне выбрать другое место возврата.
 Expected result:
-Стоимость аренды, предлагаемых автомобилей, изменилась на выбранную.
+Место возврата автомобиля изменилось на выбранное.
 
 №10
 Test case description:
@@ -122,4 +125,4 @@ Steps:
 2). Выбрать место аренды и время, которое уже прошло.
 3). Нажать "Select My Car".
 Expected result:
-Whoops! Your pick-up time has already passed. Please select a new time.
+Появление сообщения об ошибке вверху страницы: "Whoops! Your pick-up time has already passed. Please select a new time."

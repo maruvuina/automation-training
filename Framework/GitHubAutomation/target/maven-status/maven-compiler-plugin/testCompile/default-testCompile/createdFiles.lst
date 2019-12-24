@@ -1,0 +1,13 @@
+com\epam\ta\driver\DriverSingleton.class
+com\epam\ta\test\HomePageTest.class
+com\epam\ta\test\CommonConditions.class
+com\epam\ta\page\HomePage.class
+com\epam\ta\page\VehiclePage.class
+com\epam\ta\util\TestListener.class
+com\epam\ta\service\TestDataReader.class
+com\epam\ta\test\VehiclePageTest.class
+com\epam\ta\model\BookingCar.class
+com\epam\ta\page\AbstractPage.class
+com\epam\ta\service\BookingCarCreator.class
+com\epam\ta\service\TestData.class
+com\epam\ta\util\FormatterPattern.class
